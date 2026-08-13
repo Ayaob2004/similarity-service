@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "global_features": {
+    "hue_bins": 256,
+    "saturation_bins": 256,
+    "color_weight": 1.0,
+    "time_weight": 1.0
+  },
+  "time_distance": {
+    "mode": "fixed_horizon",
+    "fixed_horizon_seconds": 86400.0
+  },
+  "initial_partition": {
+    "preference_quantile": 0.5,
+    "damping": 0.75,
+    "max_iter": 500,
+    "convergence_iter": 30,
+    "random_state": 0
+  },
+  "sift": {
+    "nfeatures": 0,
+    "n_octave_layers": 3,
+    "contrast_threshold": 0.04,
+    "edge_threshold": 10.0,
+    "sigma": 1.6,
+    "max_edge": 1024
+  },
+  "combined_distance": {
+    "sift_weight": 3.0,
+    "color_weight": 2.0,
+    "time_weight": 1.0
+  },
+  "final_grouping": {
+    "linkage": "average",
+    "similarity_threshold": 0.579,
+    "minimum_group_size": 2
+  }
+}

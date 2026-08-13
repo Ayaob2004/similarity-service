@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-gallery-similarity-engine"
+version = "1.0.1"
+description = "Production image-similarity and incremental grouping engine for Smart Gallery."
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy==1.26.4",
+    "Pillow==12.3.0",
+    "scikit-learn==1.5.2",
+    "opencv-python-headless==4.11.0.86",
+]
+
+[project.scripts]
+smart-gallery = "smart_gallery_similarity.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+smart_gallery_similarity = ["config/*.json"]
