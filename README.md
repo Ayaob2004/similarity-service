@@ -196,3 +196,18 @@ payload = result.to_dict()
 - Final linkage: average
 - Final similarity threshold: 0.579
 - Minimum group size: 2
+
+Quality rating:
+https://github.com/farahmikari/ImageEvaluationProject.git
+
+Face Grouping:
+https://github.com/Ahmad-Jouhar-1/Face-Grouping.git
+
+Similar:
+https://github.com/Ayaob2004/similarity-service.git
+
+Backend:
+https://github.com/reham270/image_eval_backend.git
+
+Flutter:
+https://github.com/Ahmad-Jouhar-1/Smart-Gallery.git
